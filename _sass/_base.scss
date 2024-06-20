@@ -352,10 +352,11 @@ body {
 .bg-dark {
     position: relative;
     display: block;
-    width: 100%; // Set the width to 100% or any specific width you need
+    width: 100%;
+    height: calc(100% / (1920 / 432)); // Aspect ratio 4:3
 
-    // Calculate height based on desired aspect ratio (4:3 in this case)
-    height: calc(100% / (1920 / 600)); // Use the inverse of the ratio for height calculation
+    margin: 0; // Remove any margin
+    padding: 0; // Remove any padding
 
     .video-container {
         position: absolute;
@@ -366,12 +367,9 @@ body {
         overflow: hidden;
 
         video {
-            min-width: 100%;
-            min-height: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            width: 100%; // Ensure video fills its container horizontally
+            height: 100%; // Ensure video fills its container vertically
+            object-fit: cover; // Maintain aspect ratio and cover entire container
         }
     }
 
