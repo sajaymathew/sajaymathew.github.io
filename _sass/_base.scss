@@ -353,11 +353,9 @@ body {
     position: relative;
     display: block;
     width: 100%; // Set the width to 100% or any specific width you need
-    
-    margin: 0; // Remove any margin
-    padding: 0; // Remove any padding
+
     // Calculate height based on desired aspect ratio (4:3 in this case)
-    height: calc(100% / (1920 / 432)); // Use the inverse of the ratio for height calculation
+    height: calc(100% / (1920 / 600)); // Use the inverse of the ratio for height calculation
 
     .video-container {
         position: absolute;
