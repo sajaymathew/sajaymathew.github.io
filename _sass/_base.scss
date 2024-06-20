@@ -349,44 +349,54 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
-// Style for the <aside> background and video
-.bg-dark {
-    background-color: #222;
-    color: white;
-}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: calc(100% / (1920 / 432)); // Maintain aspect ratio of 1920x432
-    overflow: hidden;
-}
-
-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; // Ensure video covers the container without cropping
-}
-
 .container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    position: relative; // Ensure content inside respects the <aside> height
-    z-index: 1; // Ensure content inside is above the video
 }
 
 .text-center {
     text-align: center;
 }
 
-.call-to-action {
+// Style for the <aside> background and video
+aside {
+    position: relative; // Ensure positioning context for absolute positioning
+
+    // Ensure the <aside> fills the width and height of .call-to-action
     width: 100%;
-    height: 100%; // Ensure the <aside> fills the width and height of .call-to-action
+    height: 100%;
+    overflow: hidden; // Hide any overflow content
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; // Hide any overflow content
+
+        video {
+            min-width: 100%; // Ensure video fills its container horizontally
+            min-height: 100%; // Ensure video fills its container vertically
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .container {
+        position: relative; // Ensure content inside the container respects the <aside> height
+        z-index: 1; // Ensure content inside the container is above the video
+    }
+}
+
+.call-to-action {
+    // Ensure the <aside> fills the width and height of .call-to-action
+    width: 100%;
+    height: 100%;
 
     h2 {
         margin: 0 auto 20px;
