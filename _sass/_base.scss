@@ -44,6 +44,10 @@ p {
 
 .bg-primary {
     background-color: $theme-primary;
+    background-image: url('../img/about-me_website.jpg'); /* Specify path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: $theme-primary; /* Set text color for better contrast */
 }
 
 .bg-dark {
