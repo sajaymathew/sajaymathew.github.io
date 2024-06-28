@@ -390,3 +390,10 @@ body {
         z-index: 1;
     }
 }
+
+.subpage-bg-primary {
+    background-color: $theme-primary;
+    background-size: cover;
+    background-position: center;
+    color: $theme-primary; /* Set text color for better contrast */
+}
