@@ -402,3 +402,19 @@ body {
 .spacer{
     margin-top: 20px;
 }
+
+.circle {
+    width: 50%; /* Adjust size of the circle relative to the viewport width */
+    max-width: 200px; /* Maximum width of the circle */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes the div container circular */
+    overflow: hidden; /* Ensures the image does not overflow outside the circle */
+    border: 2px solid #ccc; /* Optional: Border around the circle */
+    margin: 0 auto; /* Center the circle horizontally */
+}
+
+.circle img {
+    width: 100%; /* Makes sure the image fills the circle container */
+    height: auto; /* Maintains aspect ratio of the image */
+    display: block; /* Ensures the image is centered */
+}
