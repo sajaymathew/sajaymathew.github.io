@@ -404,10 +404,10 @@ body {
 }
 
 .circle {
-    width: 60%; /* Adjust size of the circle relative to the viewport width */
-    max-width: 200px; /* Maximum width of the circle */
+    width: 70%; /* Adjust size of the circle relative to the viewport width */
+    max-width: 300px; /* Maximum width of the circle */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Makes the div container circular */
+    border-radius: 70%; /* Makes the div container circular */
     overflow: hidden; /* Ensures the image does not overflow outside the circle */
     border: 2px solid #ccc; /* Optional: Border around the circle */
     margin: 0 auto; /* Center the circle horizontally */
