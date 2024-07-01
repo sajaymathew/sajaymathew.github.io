@@ -47,7 +47,7 @@ p {
      /* Specify path to your background image */
     background-size: cover;
     background-position: center;
-    color: $theme-primary; /* Set text color for better contrast */
+    color: white; /* Set text color for better contrast */
 }
 
 .bg-dark {
@@ -213,7 +213,6 @@ header {
 
 .section-heading {
     margin-top: 0;
-    color: white;
 }
 
 .service-box {
