@@ -1,6 +1,6 @@
 # Site settings
 title: Sajay Sunny Mathew
-email: sajaysmathew@gmail.com
+email: sajay.mathew@anu.edu.au
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "sajaymathew.github.io" # the base hostname & protocol for your site
